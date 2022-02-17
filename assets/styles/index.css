@@ -1,0 +1,15 @@
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.container {
+  border: 1px solid pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 200px;
+}
+/*# sourceMappingURL=index.css.map */
