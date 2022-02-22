@@ -17,6 +17,9 @@
 
 ("");
 
+//1 способ
+const section = document.querySelector("section");
+
 //карточки
 const getData = () => [
   { imgSrc: "../assets/images/js.png", name: "javascript" },
@@ -42,7 +45,33 @@ const getData = () => [
 // перемешивание карточек
 const randomize = () => {
   const cardData = getData();
-  console.log(cardData);
+  // console.log(cardData);
   cardData.sort(() => Math.random() - 0.5);
-  console.log(cardData);
+  return cardData;
 };
+
+const cardGenerator = () => {
+  const cardData = randomize();
+  console.log(cardData);
+
+  cardData.forEach((item) => {
+    //для каждой карточки:
+    //-создаем html-элементы
+    const card = document.createElement("div");
+    const face = document.createElement("img");
+    const back = document.createElement("div");
+    //-добавляем классы
+    card.classList = "card";
+    face.classList = "face";
+    back.classList = "back";
+
+    //элемент face - соответствующая картинка
+    face.src = item.imgSrc;
+
+    //размещаем карточки
+    section.appendChild(card);
+    card.appendChild(face);
+    card.appendChild(back);
+  });
+};
+cardGenerator();
