@@ -60,15 +60,18 @@ const cardGenerator = () => {
     const card = document.createElement("div");
     const face = document.createElement("img");
     const back = document.createElement("div");
-    //-добавляем классы
+    //-добавляем классы созданным элементам
     card.classList = "card";
     face.classList = "face";
     back.classList = "back";
 
-    //элемент face - соответствующая картинка
+    //элемент face = соответствующая картинка
     face.src = item.imgSrc;
 
-    //размещаем карточки
+    //добавляем каждому элементу атрибут name
+    card.setAttribute("name", item.name);
+
+    //размещаем карточки внутри секции
     section.appendChild(card);
     card.appendChild(face);
     card.appendChild(back);
@@ -76,9 +79,38 @@ const cardGenerator = () => {
     //вешаем клик на карточку
     card.addEventListener("click", (e) => {
       card.classList.toggle("toggleCard");
+      checkedCards(e);
     });
   });
 };
+
+//проверка
+const checkedCards = (e) => {
+  const clickedCard = e.target;
+  clickedCard.classList.add("flipped");
+
+  const flippedCards = document.querySelectorAll(".flipped");
+  console.log(clickedCard);
+  if (flippedCards.length === 2) {
+    if (
+      flippedCards[0].getAttribute("name") ===
+      flippedCards[1].getAttribute("name")
+    ) {
+      console.log("match");
+      flippedCards.forEach((card) => {
+        card.classList.remove("flipped");
+        card.style.pointerEvents = "none";
+      });
+    } else {
+      console.log("wrong");
+      flippedCards.forEach((card) => {
+        card.classList.remove("flipped");
+        setTimeout(() => card.classList.remove("toggleCard"), 2000);
+      });
+    }
+  }
+};
+
 cardGenerator();
 
 //доделать:
