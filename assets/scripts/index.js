@@ -19,6 +19,11 @@
 
 //1 способ
 const section = document.querySelector("section");
+let counter = 0;
+const counterText = document.querySelector(".counter");
+const restartBtn = document.querySelector(".restartBtn");
+
+restartBtn;
 
 //карточки
 const getData = () => [
@@ -90,13 +95,11 @@ const checkedCards = (e) => {
   clickedCard.classList.add("flipped");
 
   const flippedCards = document.querySelectorAll(".flipped");
-  console.log(clickedCard);
   if (flippedCards.length === 2) {
     if (
       flippedCards[0].getAttribute("name") ===
       flippedCards[1].getAttribute("name")
     ) {
-      console.log("match");
       flippedCards.forEach((card) => {
         card.classList.remove("flipped");
         card.style.pointerEvents = "none";
@@ -108,10 +111,29 @@ const checkedCards = (e) => {
         setTimeout(() => card.classList.remove("toggleCard"), 2000);
       });
     }
+    //почему не срабатывет???
+    counter++;
+    counterText.innerHTML = counter;
+    console.log(counter);
   }
 };
 
+//restart
+const restart = () => {
+  const cardData = randomize();
+  const faces = document.querySelectorAll(".face");
+  const cards = document.querySelectorAll(".card");
+  cardData.forEach((card, index) => {
+    cards[index].classList.remove("toggleCard");
+  });
+};
+
 cardGenerator();
+
+//вешаем на кнопку
+restartBtn.addEventListener("click", () => {
+  restart();
+});
 
 //доделать:
 //переворачивание карты неровное
