@@ -61,4 +61,9 @@ section {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
+
+.face {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
 /*# sourceMappingURL=index.css.map */

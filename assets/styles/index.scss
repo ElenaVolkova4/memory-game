@@ -57,6 +57,10 @@ section {
   transform: rotateY(180deg);
 }
 
+.face {
+  transform: rotateY(-180deg);
+}
+
 //comments:
 // rem - задаёт размер относительно размера шрифта элемента <html>.
 // 1em – текущий размер шрифта (родителя).

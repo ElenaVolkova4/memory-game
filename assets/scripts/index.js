@@ -23,8 +23,6 @@ let counter = 0;
 const counterText = document.querySelector(".counter");
 const restartBtn = document.querySelector(".restartBtn");
 
-restartBtn;
-
 //карточки
 const getData = () => [
   { imgSrc: "../assets/images/js.png", name: "javascript" },
@@ -50,7 +48,6 @@ const getData = () => [
 // перемешивание карточек
 const randomize = () => {
   const cardData = getData();
-  // console.log(cardData);
   cardData.sort(() => Math.random() - 0.5);
   return cardData;
 };
@@ -108,13 +105,11 @@ const checkedCards = (e) => {
       console.log("wrong");
       flippedCards.forEach((card) => {
         card.classList.remove("flipped");
-        setTimeout(() => card.classList.remove("toggleCard"), 2000);
+        setTimeout(() => card.classList.remove("toggleCard"), 1500);
       });
     }
-    //почему не срабатывет???
     counter++;
     counterText.innerHTML = counter;
-    console.log(counter);
   }
 };
 
@@ -123,16 +118,25 @@ const restart = () => {
   const cardData = randomize();
   const faces = document.querySelectorAll(".face");
   const cards = document.querySelectorAll(".card");
-  cardData.forEach((card, index) => {
+  section.style.pointerEvents = "none"; //пока происходит restart нельзя ничего нажимать
+  cardData.forEach((item, index) => {
     cards[index].classList.remove("toggleCard");
+    setTimeout(() => {
+      cards[index].style.pointerEvents = "all";
+      faces[index].src = item.imgSrc;
+      cards[index].getAttribute("name", item.name);
+      section.style.pointerEvents = "all";
+    }, 1000);
   });
 };
 
 cardGenerator();
 
-//вешаем на кнопку
+//restart
 restartBtn.addEventListener("click", () => {
   restart();
+  counterText.innerHTML = 0;
+  counter = 0;
 });
 
 //доделать:
