@@ -9,13 +9,29 @@
   box-sizing: border-box;
 }
 
+html {
+  // background: linear-gradient(
+  //   to bottom right,
+  //   rgb(233, 192, 226),
+  //   rgb(176, 96, 207)
+  // );
+  // height: 100%;
+  // background-size: 100%;
+  // font-family: "Manrope", sans-serif;
+  background-blend-mode: screen;
+  background: linear-gradient(limegreen, transparent),
+    linear-gradient(90deg, skyblue, transparent),
+    linear-gradient(-90deg, coral, transparent);
+}
+
 body {
-  // height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 // .container {
 //   border: 1px solid pink;
 //   display: flex;
@@ -60,6 +76,9 @@ section {
 
 .face {
   transform: rotateY(-180deg);
+}
+
+.restartBtn {
 }
 
 //comments:
