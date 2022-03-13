@@ -46,10 +46,11 @@ section {
   height: 100%;
   position: absolute;
   pointer-events: none;
+  border-radius: 10px;
 }
 
 .back {
-  background: blue;
+  background: rgb(65, 13, 161);
   backface-visibility: hidden;
 }
 

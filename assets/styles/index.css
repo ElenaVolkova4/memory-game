@@ -49,10 +49,11 @@ section {
   height: 100%;
   position: absolute;
   pointer-events: none;
+  border-radius: 10px;
 }
 
 .back {
-  background: blue;
+  background: #410da1;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
