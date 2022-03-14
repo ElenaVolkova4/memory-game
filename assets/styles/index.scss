@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -54,6 +55,7 @@ section {
   transition: all 2s ease;
   // transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  border-radius: 10px;
 }
 
 .face,
@@ -66,7 +68,7 @@ section {
 }
 
 .back {
-  background: rgb(65, 13, 161);
+  background: #ff6200;
   backface-visibility: hidden;
 }
 
@@ -79,8 +81,52 @@ section {
 }
 
 .restartBtn {
+  cursor: pointer;
+
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #00a480;
+  border-radius: 0.6em;
+  // color: #00a480;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  // font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+
+  // border-color: #db9334;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #00a480 inset, 0 0 0 0 #00a480;
+  // -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.restartBtn:hover,
+.restartBtn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.restartBtn:hover {
+  box-shadow: 0 0 10px 0 #00a480 inset, 0 0 10px 4px #00a480;
 }
 
 //comments:
 // rem - задаёт размер относительно размера шрифта элемента <html>.
 // 1em – текущий размер шрифта (родителя).
+
+.restartBtn:active {
+  top: 7px;
+  font-size: 50px;
+  text-shadow: 0px 3px 0px #07526e,
+    0px 5px 1px #07526e
+      /*, 3px 0px 1px #07526e, 3px 3px 1px #07526e,
+     -2px 0px 1px #68cff2*/;
+}
