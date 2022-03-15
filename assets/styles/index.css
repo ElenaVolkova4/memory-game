@@ -83,7 +83,7 @@ section {
      -moz-appearance: none;
           appearance: none;
   background-color: transparent;
-  border: 2px solid #00a480;
+  border: 2px solid #ff9f00;
   border-radius: 0.6em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,27 +99,20 @@ section {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  color: #fff;
-  -webkit-box-shadow: 0 0 40px 40px #00a480 inset, 0 0 0 0 #00a480;
-          box-shadow: 0 0 40px 40px #00a480 inset, 0 0 0 0 #00a480;
+  color: #ff6200;
+  -webkit-box-shadow: 0 0 40px 40px #ff9f00 inset, 0 0 0 0 #ff9f00;
+          box-shadow: 0 0 40px 40px #ff9f00 inset, 0 0 0 0 #ff9f00;
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
 }
 
-.restartBtn:hover,
-.restartBtn:focus {
-  color: #fff;
-  outline: 0;
-}
-
 .restartBtn:hover {
-  -webkit-box-shadow: 0 0 10px 0 #00a480 inset, 0 0 10px 4px #00a480;
-          box-shadow: 0 0 10px 0 #00a480 inset, 0 0 10px 4px #00a480;
+  -webkit-box-shadow: 0 0 10px 0 #ff9f00 inset, 0 0 10px 4px #ff9f00;
+          box-shadow: 0 0 10px 0 #ff9f00 inset, 0 0 10px 4px #ff9f00;
 }
 
 .restartBtn:active {
-  top: 7px;
-  font-size: 50px;
-  text-shadow: 0px 3px 0px #07526e, 0px 5px 1px #07526e;
+  -webkit-box-shadow: 0 0 5px 0 #ff9f00, 0 0 5px 1px #ff9f00;
+          box-shadow: 0 0 5px 0 #ff9f00, 0 0 5px 1px #ff9f00;
 }
 /*# sourceMappingURL=index.css.map */
