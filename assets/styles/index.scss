@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 html {
@@ -26,6 +26,11 @@ html {
 }
 
 body {
+  max-width: 900px;
+  margin: auto;
+  padding-left: 20%;
+  padding-right: 20%;
+
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -33,6 +38,9 @@ body {
   flex-direction: column;
 }
 
+.counter_label {
+  align-self: flex-end;
+}
 // .container {
 //   border: 1px solid pink;
 //   display: flex;
@@ -45,7 +53,7 @@ section {
   display: grid;
   grid-template-columns: repeat(4, 8rem);
   grid-template-rows: repeat(3, 8rem);
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   perspective: 800px;
 }
 
