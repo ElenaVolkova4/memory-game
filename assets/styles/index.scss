@@ -105,17 +105,19 @@ section {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  color: #ff6200;
+  color: #ffffff;
   box-shadow: 0 0 40px 40px #ff9f00 inset, 0 0 0 0 #ff9f00;
   transition: all 150ms ease-in-out;
 }
 
 .restartBtn:hover {
   box-shadow: 0 0 10px 0 #ff9f00 inset, 0 0 10px 4px #ff9f00;
+  color: #ff6200;
 }
 
 .restartBtn:active {
   box-shadow: 0 0 5px 0 #ff9f00, 0 0 5px 1px #ff9f00;
+  color: #ff6200;
 }
 
 //comments:
