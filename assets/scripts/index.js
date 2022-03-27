@@ -14,11 +14,54 @@
 //3. правильные ответы подсвечиваются?
 // 4. выводить погоду?
 
+// вынести в отдельный файл??
+// import * as Timer from "./timer";
+
+//отсчет времени____________________________________________
+let counterTime = 0;
+let timer;
+
+const timerScreen = document.querySelector(".timer__screen");
+
+//формат отображения времени
+const displayTimer = () => {
+  const hours = Math.floor(counterTime / 3600);
+  const minutes = Math.floor((counterTime % 3600) / 60);
+  const seconds = Math.floor(counterTime % 60);
+
+  const displayHours = hours < 10 ? "0" + hours : hours;
+  const displayMinutes = minutes < 10 ? "0" + minutes : minutes;
+  const displaySeconds = seconds < 10 ? "0" + seconds : seconds;
+
+  timerScreen.innerHTML =
+    displayHours + ":" + displayMinutes + ":" + displaySeconds;
+};
+
+//прямой отсчет
+const countUp = () => {
+  counterTime++;
+  displayTimer();
+};
+
+const countTimer = () => {
+  timer = clearInterval(timer);
+  timer = setInterval(countUp, 1000);
+};
+
+const restartTimer = () => {
+  timer = clearInterval(timer);
+  counterTime = 0;
+  displayTimer();
+  countTimer();
+};
+
+document.addEventListener("DOMContentLoaded", countTimer);
+
+displayTimer(); //чтобы на таймере всегда были цифры
+// ____________________________________________________;
+
 // функция переворачивания карты
 
-("");
-
-//1 способ
 const section = document.querySelector("section");
 let counter = 0;
 const counterText = document.querySelector(".counter");
@@ -55,7 +98,6 @@ const randomize = () => {
 
 const cardGenerator = () => {
   const cardData = randomize();
-  console.log(cardData);
 
   cardData.forEach((item) => {
     //для каждой карточки:
@@ -85,6 +127,19 @@ const cardGenerator = () => {
       checkedCards(e);
     });
   });
+
+  // //конец игры
+  // if (
+  //   // document.querySelectorAll(".card").length ==
+  //   // document.querySelectorAll(".card.toggleCard").length
+  //   document.querySelectorAll(".card.toggleCard").length === 2
+  // ) {
+  //   console.log("game over");
+
+  //   // const win = document.createElement("div");
+  //   // win.classList = "win";
+  //   // win.setAttribute("innerHTML", "УРА");
+  // }
 };
 
 //проверка
@@ -103,7 +158,6 @@ const checkedCards = (e) => {
         card.style.pointerEvents = "none";
       });
     } else {
-      console.log("wrong");
       flippedCards.forEach((card) => {
         card.classList.remove("flipped");
         setTimeout(() => card.classList.remove("toggleCard"), 1500);
@@ -112,9 +166,21 @@ const checkedCards = (e) => {
     counter++;
     counterText.innerHTML = counter;
   }
+  // //конец игры
+  if (
+    // document.querySelectorAll(".card").length ==
+    // document.querySelectorAll(".card.toggleCard").length
+    document.querySelectorAll(".card.toggleCard").length === 2
+  ) {
+    console.log("game over");
+    document.querySelector(".win").classList.add("active");
+    // const win = document.createElement("div");
+    // win.classList = "win";
+    // win.setAttribute("innerHTML", "УРА");
+  }
 };
 
-//restart
+//перезапуск игры
 const restart = () => {
   const cardData = randomize();
   const faces = document.querySelectorAll(".face");
@@ -133,9 +199,10 @@ const restart = () => {
 
 cardGenerator();
 
-//restart
+//кнопка перезапуска
 restartBtn.addEventListener("click", () => {
   restart();
+  restartTimer();
   counterText.innerHTML = 0;
   counter = 0;
 });

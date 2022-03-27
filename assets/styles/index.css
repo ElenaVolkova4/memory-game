@@ -21,6 +21,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -72,16 +75,18 @@ section {
   -ms-grid-rows: (8rem)[3];
       grid-template-rows: repeat(3, 8rem);
   grid-gap: 1rem;
-  -webkit-perspective: 800px;
-          perspective: 800px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
 
 .card {
   position: relative;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
   border-radius: 10px;
@@ -151,5 +156,36 @@ section {
   -webkit-box-shadow: 0 0 5px 0 #ff9f00, 0 0 5px 1px #ff9f00;
           box-shadow: 0 0 5px 0 #ff9f00, 0 0 5px 1px #ff9f00;
   color: #ff6200;
+}
+
+.win {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+}
+
+.win .win__text {
+  padding: 100px;
+  color: #ff6200;
+  font-size: 50px;
+  border: 1px solid #ff6200;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 205, 50, 0.8)), to(transparent)), -webkit-gradient(linear, right top, left top, from(rgba(255, 127, 80, 0.8)), to(transparent));
+  background: linear-gradient(rgba(50, 205, 50, 0.8), transparent), linear-gradient(-90deg, rgba(255, 127, 80, 0.8), transparent);
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=index.css.map */
