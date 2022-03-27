@@ -46,6 +46,16 @@ body {
   flex-direction: column;
 }
 
+.timer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  .timer__screen {
+    width: 30px;
+  }
+}
+
 .counter_label {
   align-self: flex-end;
 }

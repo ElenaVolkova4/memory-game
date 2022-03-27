@@ -44,6 +44,21 @@ body {
           flex-direction: column;
 }
 
+.timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+.timer .timer__screen {
+  width: 30px;
+}
+
 .counter_label {
   -ms-flex-item-align: end;
       align-self: flex-end;
