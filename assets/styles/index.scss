@@ -130,25 +130,34 @@ section {
   right: 0;
   left: 0;
   display: none;
-
-  // width: 400px;
-  // height: 200px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  .win__text {
-    padding: 100px;
-
-    color: #ffffff;
-    font-size: 50px;
-    border: 1px solid #ff6200;
-    border-radius: 10px;
-    background: linear-gradient(rgba(50, 205, 50), transparent),
-      // linear-gradient(90deg, skyblue, transparent),
-      linear-gradient(-90deg, rgba(255, 127, 80), transparent);
-  }
 }
-//добавить гифку?????
+
+.win__content {
+  // border: 1px solid #ff6200;
+  border-radius: 10px;
+  background: linear-gradient(rgb(50, 205, 50), transparent),
+    // linear-gradient(90deg, skyblue, transparent),
+    linear-gradient(0deg, rgb(255, 127, 80), transparent);
+  // transparent
+  display: flex;
+  flex-direction: row;
+}
+
+.win__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 900;
+  padding: 30px;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.win__img {
+  width: 200px;
+}
 .active {
   display: flex;
   justify-content: center;

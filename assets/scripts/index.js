@@ -55,6 +55,12 @@ const restartTimer = () => {
   countTimer();
 };
 
+const stopTimer = () => {
+  timer = clearInterval(timer);
+  counterTime = 0;
+  displayTimer();
+};
+
 document.addEventListener("DOMContentLoaded", countTimer);
 
 displayTimer(); //чтобы на таймере всегда были цифры
@@ -166,17 +172,17 @@ const checkedCards = (e) => {
     counter++;
     counterText.innerHTML = counter;
   }
-  // //конец игры
+  //конец игры
   if (
-    // document.querySelectorAll(".card").length ==
-    // document.querySelectorAll(".card.toggleCard").length
-    document.querySelectorAll(".card.toggleCard").length === 2
+    document.querySelectorAll(".card").length ==
+    document.querySelectorAll(".card.toggleCard").length
+    // document.querySelectorAll(".card.toggleCard").length === 2
   ) {
     console.log("game over");
     document.querySelector(".win").classList.add("active");
-    // const win = document.createElement("div");
-    // win.classList = "win";
-    // win.setAttribute("innerHTML", "УРА");
+    const time = document.querySelector(".timer__screen").innerHTML;
+    document.querySelector(".win__time").innerHTML = time;
+    stopTimer();
   }
 };
 
