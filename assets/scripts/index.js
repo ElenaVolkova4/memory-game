@@ -72,6 +72,7 @@ const section = document.querySelector("section");
 let counter = 0;
 const counterText = document.querySelector(".counter");
 const restartBtn = document.querySelector(".restartBtn");
+const playAgainBtn = document.querySelector(".win__button");
 
 //карточки
 const getData = () => [
@@ -207,6 +208,15 @@ cardGenerator();
 
 //кнопка перезапуска
 restartBtn.addEventListener("click", () => {
+  restart();
+  restartTimer();
+  counterText.innerHTML = 0;
+  counter = 0;
+});
+
+//кнопка играть еще раз
+playAgainBtn.addEventListener("click", () => {
+  document.querySelector(".win").classList.remove("active");
   restart();
   restartTimer();
   counterText.innerHTML = 0;

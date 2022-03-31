@@ -124,7 +124,7 @@ section {
           appearance: none;
   background-color: transparent;
   border: 2px solid #ff9f00;
-  border-radius: 0.6em;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,7 +134,7 @@ section {
   font-weight: 400;
   line-height: 1;
   margin: 20px;
-  padding: 1.2em 2.8em;
+  padding: 20px 40px;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
@@ -180,7 +180,7 @@ section {
           flex-direction: row;
 }
 
-.win__text {
+.win__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,6 +199,44 @@ section {
   padding: 30px;
   color: #ffffff;
   font-size: 40px;
+}
+
+.win__info .win__button {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #ff9f00;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 12px 18px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  -webkit-box-shadow: 0 0 40px 40px #ff9f00 inset, 0 0 0 0 #ff9f00;
+          box-shadow: 0 0 40px 40px #ff9f00 inset, 0 0 0 0 #ff9f00;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.win__info .win__button:hover {
+  -webkit-box-shadow: 0 0 10px 0 #ff9f00 inset, 0 0 10px 4px #ff9f00;
+          box-shadow: 0 0 10px 0 #ff9f00 inset, 0 0 10px 4px #ff9f00;
+}
+
+.win__info .win__button:active {
+  -webkit-box-shadow: 0 0 5px 0 #ff9f00, 0 0 5px 1px #ff9f00;
+          box-shadow: 0 0 5px 0 #ff9f00, 0 0 5px 1px #ff9f00;
 }
 
 .win__img {
