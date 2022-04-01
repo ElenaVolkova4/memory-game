@@ -57,9 +57,9 @@ displayTimer(); //чтобы на таймере всегда были цифр�
 
 // функция переворачивания карты
 
-const section = document.querySelector("section");
+const section = document.querySelector(".section");
 let counter = 0;
-const counterText = document.querySelector(".counter");
+const counterText = document.querySelector(".counter__value");
 const restartBtn = document.querySelector(".restartBtn");
 const playAgainBtn = document.querySelector(".win__button");
 

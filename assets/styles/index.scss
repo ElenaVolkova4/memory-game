@@ -1,3 +1,5 @@
+$tablet: 700px;
+
 * {
   margin: 0;
   padding: 0;
@@ -38,11 +40,19 @@ body {
   }
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 .timer {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  margin-bottom: 5px;
+  // margin-bottom: 5px;
 
   // .timer__screen {
   //   width: 30px;
@@ -53,21 +63,33 @@ body {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  margin-bottom: 5px;
+  // margin-bottom: 5px;
 }
 
 // .counter_label {
 //   align-self: flex-end;
 // }
 
-section {
+.section {
   display: grid;
-  grid-template-columns: repeat(4, 8rem);
-  grid-template-rows: repeat(3, 8rem);
-  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(3, 150px);
+  grid-gap: 15px;
   // perspective: 800px;
   perspective: 1000px;
+
+  // @media screen and (max-width: $tablet) {
+  //   grid-template-columns: repeat(4, 100px);
+  //   grid-template-rows: repeat(3, 100px);
+  //   grid-gap: 15px;
+  //   perspective: 500px;
+  // }
 }
+
+// .section {
+//   perspective: 1000px;
+//   display: flex;
+// }
 
 .card {
   position: relative;
@@ -112,7 +134,7 @@ section {
   font-size: 20px;
   font-weight: 400;
   line-height: 1;
-  margin: 20px;
+  // margin: 20px;
   padding: 20px 40px;
   text-decoration: none;
   text-align: center;
