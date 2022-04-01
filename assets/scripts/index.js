@@ -1,20 +1,9 @@
-//1. добавить изменение темы через document.querySelector('.page').classList.remove('light-theme'); и document.querySelector('.page').classList.add('dark-theme')
-
-// пример
-// let page = document.querySelector(".page");
-// let themeButton = document.querySelector(".theme-button");
-
-// themeButton.onclick = function () {
-//   page.classList.toggle("light-theme");
-//   page.classList.toggle("dark-theme"); //или одну тему?
-// };
-
 //2.в коце выводить: сколько движений совершено за сколько времени
 
 //3. правильные ответы подсвечиваются?
 // 4. выводить погоду?
 
-// вынести в отдельный файл??
+// вынести в отдельный файл таймер??
 // import * as Timer from "./timer";
 
 //отсчет времени____________________________________________
@@ -173,7 +162,6 @@ const checkedCards = (e) => {
     counter++;
     counterText.innerHTML = counter;
   }
-  //конец игры
   if (
     document.querySelectorAll(".card").length ==
     document.querySelectorAll(".card.toggleCard").length

@@ -19,17 +19,17 @@ body {
   padding-right: 20%;
 
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // flex-direction: column;
+  // gap: 20px;
 }
 
 .header {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .timer {
@@ -37,14 +37,20 @@ body {
   flex-direction: row;
   gap: 10px;
 
-  .timer__screen {
-    width: 30px;
-  }
+  // .timer__screen {
+  //   width: 30px;
+  // }
 }
 
-.counter_label {
-  align-self: flex-end;
+.counter {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
+
+// .counter_label {
+//   align-self: flex-end;
+// }
 
 section {
   display: grid;
