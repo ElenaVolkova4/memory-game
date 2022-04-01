@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Caveat", cursive, serif;
+  font-size: 20px;
+
+  // font-family: Georgia, "Times New Roman", serif;
 }
 
 html {
@@ -30,12 +33,16 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
   text-align: center;
+  h1 {
+    font-size: 50px;
+  }
 }
 
 .timer {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  margin-bottom: 5px;
 
   // .timer__screen {
   //   width: 30px;
@@ -46,6 +53,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  margin-bottom: 5px;
 }
 
 // .counter_label {
@@ -101,7 +109,7 @@ section {
   border-radius: 10px;
   display: flex;
   align-self: center;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1;
   margin: 20px;
