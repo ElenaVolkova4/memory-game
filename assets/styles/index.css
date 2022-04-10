@@ -94,6 +94,27 @@ a {
   grid-gap: 15px;
   -webkit-perspective: 1000px;
           perspective: 1000px;
+  opacity: 0;
+  -webkit-animation: ani 5s forwards;
+          animation: ani 5s forwards;
+}
+
+@-webkit-keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .card {
