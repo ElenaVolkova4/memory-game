@@ -323,6 +323,12 @@ a {
   width: 200px;
 }
 
+@media screen and (max-width: 450px) {
+  .win__img {
+    display: none;
+  }
+}
+
 .active {
   display: -webkit-box;
   display: -ms-flexbox;
