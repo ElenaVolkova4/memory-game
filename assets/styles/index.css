@@ -49,6 +49,8 @@ a {
 @media screen and (max-width: 700px) {
   .header h1 {
     font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
