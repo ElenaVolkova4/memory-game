@@ -165,6 +165,7 @@ const checkedCards = (e) => {
   if (
     document.querySelectorAll(".card").length ==
     document.querySelectorAll(".card.toggleCard").length
+    //для тестирования
     // document.querySelectorAll(".card.toggleCard").length === 2
   ) {
     console.log("game over");
