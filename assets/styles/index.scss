@@ -24,7 +24,8 @@ body {
   background: linear-gradient(limegreen, transparent),
     linear-gradient(90deg, skyblue, transparent),
     linear-gradient(-90deg, coral, transparent);
-
+  background-size: cover;
+  // background-size: contain
   // padding-left: 10%;
   // padding-right: 10%;
 
