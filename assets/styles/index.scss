@@ -7,22 +7,24 @@ $mobile: 450px;
   box-sizing: border-box;
   font-family: "Caveat", cursive, serif;
   font-size: 20px;
-
-  // font-family: Georgia, "Times New Roman", serif;
 }
 
 html {
   height: 100%;
 
-  background-blend-mode: screen;
-  background: linear-gradient(limegreen, transparent),
-    linear-gradient(90deg, skyblue, transparent),
-    linear-gradient(-90deg, coral, transparent);
+  // background-blend-mode: screen;
+  // background: linear-gradient(limegreen, transparent),
+  //   linear-gradient(90deg, skyblue, transparent),
+  //   linear-gradient(-90deg, coral, transparent);
 }
 
 body {
   max-width: 1500px;
   margin: auto;
+  background: linear-gradient(limegreen, transparent),
+    linear-gradient(90deg, skyblue, transparent),
+    linear-gradient(-90deg, coral, transparent);
+
   // padding-left: 10%;
   // padding-right: 10%;
 
@@ -33,6 +35,7 @@ body {
 a {
   text-decoration: none;
 }
+
 .container {
   min-height: 100%;
   display: flex;
