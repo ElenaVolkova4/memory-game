@@ -123,19 +123,6 @@ const cardGenerator = () => {
       checkedCards(e);
     });
   });
-
-  // //конец игры
-  // if (
-  //   // document.querySelectorAll(".card").length ==
-  //   // document.querySelectorAll(".card.toggleCard").length
-  //   document.querySelectorAll(".card.toggleCard").length === 2
-  // ) {
-  //   console.log("game over");
-
-  //   // const win = document.createElement("div");
-  //   // win.classList = "win";
-  //   // win.setAttribute("innerHTML", "УРА");
-  // }
 };
 
 //проверка
