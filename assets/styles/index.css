@@ -9,14 +9,15 @@
 
 html {
   height: 100%;
+  background-blend-mode: screen;
+  background: -webkit-gradient(linear, left top, left bottom, from(limegreen), to(transparent)), -webkit-gradient(linear, left top, right top, from(skyblue), to(transparent)), -webkit-gradient(linear, right top, left top, from(coral), to(transparent));
+  background: linear-gradient(limegreen, transparent), linear-gradient(90deg, skyblue, transparent), linear-gradient(-90deg, coral, transparent);
+  background-attachment: fixed;
 }
 
 body {
   max-width: 1500px;
   margin: auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(limegreen), to(transparent)), -webkit-gradient(linear, left top, right top, from(skyblue), to(transparent)), -webkit-gradient(linear, right top, left top, from(coral), to(transparent));
-  background: linear-gradient(limegreen, transparent), linear-gradient(90deg, skyblue, transparent), linear-gradient(-90deg, coral, transparent);
-  background-size: cover;
   height: 100%;
 }
 

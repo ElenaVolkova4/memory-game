@@ -12,19 +12,22 @@ $mobile: 450px;
 html {
   height: 100%;
 
-  // background-blend-mode: screen;
-  // background: linear-gradient(limegreen, transparent),
-  //   linear-gradient(90deg, skyblue, transparent),
-  //   linear-gradient(-90deg, coral, transparent);
+  background-blend-mode: screen;
+  background: linear-gradient(limegreen, transparent),
+    linear-gradient(90deg, skyblue, transparent),
+    linear-gradient(-90deg, coral, transparent);
+  // background-size: cover;
+  // background-size: 100%;
+  background-attachment: fixed;
 }
 
 body {
   max-width: 1500px;
   margin: auto;
-  background: linear-gradient(limegreen, transparent),
-    linear-gradient(90deg, skyblue, transparent),
-    linear-gradient(-90deg, coral, transparent);
-  background-size: cover;
+  // background: linear-gradient(limegreen, transparent),
+  //   linear-gradient(90deg, skyblue, transparent),
+  //   linear-gradient(-90deg, coral, transparent);
+  // background-size: cover;
   // background-size: contain
   // padding-left: 10%;
   // padding-right: 10%;
