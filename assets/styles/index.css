@@ -5,13 +5,13 @@
           box-sizing: border-box;
   font-family: "Caveat", cursive, serif;
   font-size: 20px;
+  color: #3a3535;
 }
 
 html {
   height: 100%;
-  background-blend-mode: screen;
-  background: -webkit-gradient(linear, left top, left bottom, from(limegreen), to(transparent)), -webkit-gradient(linear, left top, right top, from(skyblue), to(transparent)), -webkit-gradient(linear, right top, left top, from(coral), to(transparent));
-  background: linear-gradient(limegreen, transparent), linear-gradient(90deg, skyblue, transparent), linear-gradient(-90deg, coral, transparent);
+  background: #ffa100;
+  background: radial-gradient(circle, #ffa100 30%, #00a383 86%);
   background-attachment: fixed;
 }
 
@@ -177,7 +177,7 @@ a {
 }
 
 .back {
-  background: #ff6200;
+  background: #f30021;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -252,8 +252,8 @@ a {
 
 .win__content {
   border-radius: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(limegreen), to(transparent)), -webkit-gradient(linear, left bottom, left top, from(coral), to(transparent));
-  background: linear-gradient(limegreen, transparent), linear-gradient(0deg, coral, transparent);
+  background: -webkit-gradient(linear, left top, left bottom, from(#32cd50)), -webkit-gradient(linear, left bottom, left top, from(coral));
+  background: linear-gradient(#32cd50), linear-gradient(0deg, coral);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
