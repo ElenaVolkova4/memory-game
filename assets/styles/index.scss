@@ -163,7 +163,8 @@ a {
   cursor: pointer;
   appearance: none;
   background-color: transparent;
-  border: 2px solid #ff9f00;
+  // border: 2px solid #f30021;
+  border: none;
   border-radius: 10px;
   display: flex;
   align-self: center;
@@ -176,8 +177,8 @@ a {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  color: #ffffff;
-  box-shadow: 0 0 40px 40px #ff9f00 inset, 0 0 0 0 #ff9f00;
+  color: #eae0d6;
+  box-shadow: 0 0 40px 40px #ffa100 inset, 0 0 0 0 #ffa100;
   transition: all 150ms ease-in-out;
 
   @media screen and (max-width: $mobile) {
@@ -189,13 +190,13 @@ a {
 }
 
 .restartBtn:hover {
-  box-shadow: 0 0 10px 0 #ff9f00 inset, 0 0 10px 4px #ff9f00;
-  color: #ff6200;
+  box-shadow: 0 0 10px 0 #f30021 inset, 0 0 10px 4px #f30021;
+  color: #f30021;
 }
 
 .restartBtn:active {
-  box-shadow: 0 0 5px 0 #ff9f00, 0 0 5px 1px #ff9f00;
-  color: #ff6200;
+  box-shadow: 0 0 5px 0 #ffa100, 0 0 5px 1px #ffa100;
+  color: #f30021;
 }
 
 //comments:
