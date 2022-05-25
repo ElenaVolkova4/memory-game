@@ -126,10 +126,10 @@ a {
 
 @media screen and (max-width: 450px) {
   .section {
-    -ms-grid-columns: (50px)[4];
-        grid-template-columns: repeat(4, 50px);
-    -ms-grid-rows: (50px)[3];
-        grid-template-rows: repeat(3, 50px);
+    -ms-grid-columns: (70px)[3];
+        grid-template-columns: repeat(3, 70px);
+    -ms-grid-rows: (70px)[4];
+        grid-template-rows: repeat(4, 70px);
     grid-gap: 5px;
     -webkit-perspective: 200px;
             perspective: 200px;
