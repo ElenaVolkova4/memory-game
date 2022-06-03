@@ -155,6 +155,7 @@ a {
 }
 
 .card {
+  cursor: url(../images/cursor.png), auto;
   position: relative;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;

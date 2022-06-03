@@ -120,8 +120,7 @@ a {
 
 .card {
   //изображение курсора должно быть не больше 32 пикселей, через запятую запасной вариант (например, auto)
-  // работает!
-  // cursor: url(../images/cursor.png), auto;
+  cursor: url(../images/cursor.png), auto;
 
   //удалить
   // cursor: pointer;
