@@ -199,14 +199,3 @@ playAgainBtn.addEventListener("click", () => {
 //доделать:
 //переворачивание карты неровное
 //проверить на валидаторе
-
-// const func = () => {
-//   console.log(this);
-// };
-// func();
-
-// function func2(a, b) {
-//   console.log(this);
-//   return a + b;
-// }
-// console.log(func2(5, 2));
