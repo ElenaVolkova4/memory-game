@@ -71,9 +71,14 @@ a {
 .timer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
+.timer__clock {
+  width: 20px;
+}
 .counter {
   display: flex;
   flex-direction: row;

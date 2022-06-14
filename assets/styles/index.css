@@ -83,7 +83,17 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
+}
+
+.timer__clock {
+  width: 20px;
 }
 
 .counter {
@@ -252,6 +262,8 @@ a {
 }
 
 .win__content {
+  width: 500px;
+  height: 500px;
   border-radius: 10px;
   background: #00a383;
   background: radial-gradient(circle, rgba(0, 163, 131, 0.897912) 30%, rgba(255, 161, 0, 0.890951) 86%);
