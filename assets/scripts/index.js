@@ -40,14 +40,14 @@ const restartTimer = () => {
   counterTime = 0;
   displayTimer();
   countTimer();
-  // timer_clock.classList.add("animation_clock");
+  timer_clock.classList.add("animation_clock");
 };
 
 const stopTimer = () => {
   timer = clearInterval(timer);
   counterTime = 0;
   displayTimer();
-  // timer_clock.classList.remove("animation_clock");
+  timer_clock.classList.remove("animation_clock");
 };
 
 document.addEventListener("DOMContentLoaded", countTimer);
