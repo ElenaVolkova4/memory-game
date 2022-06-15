@@ -8,6 +8,7 @@ let counterTime = 0;
 let timer;
 
 const timerScreen = document.querySelector(".timer__screen");
+const timer_clock = document.querySelector(".timer__clock");
 
 //формат отображения времени
 const displayTimer = () => {
@@ -39,12 +40,14 @@ const restartTimer = () => {
   counterTime = 0;
   displayTimer();
   countTimer();
+  // timer_clock.classList.add("animation_clock");
 };
 
 const stopTimer = () => {
   timer = clearInterval(timer);
   counterTime = 0;
   displayTimer();
+  // timer_clock.classList.remove("animation_clock");
 };
 
 document.addEventListener("DOMContentLoaded", countTimer);

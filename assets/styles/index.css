@@ -1,3 +1,49 @@
+@-webkit-keyframes circle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(260deg);
+            transform: rotate(260deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes circle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(260deg);
+            transform: rotate(260deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -94,6 +140,11 @@ a {
 
 .timer__clock {
   width: 20px;
+}
+
+.animation_clock {
+  -webkit-animation: 4.3s circle infinite;
+          animation: 4.3s circle infinite;
 }
 
 .counter {
@@ -194,8 +245,8 @@ a {
 }
 
 .toggleCard {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg) rotateX(0deg);
+          transform: rotateY(180deg) rotateX(0deg);
 }
 
 .face {

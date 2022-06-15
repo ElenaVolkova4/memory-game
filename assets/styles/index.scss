@@ -1,6 +1,24 @@
 $tablet: 700px;
 $mobile: 450px;
 
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(260deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -79,6 +97,11 @@ a {
 .timer__clock {
   width: 20px;
 }
+
+.animation_clock {
+  animation: 4.3s circle infinite;
+}
+
 .counter {
   display: flex;
   flex-direction: row;
@@ -156,7 +179,7 @@ a {
 }
 
 .toggleCard {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) rotateX(0deg);
 }
 
 .face {
