@@ -150,10 +150,10 @@ const checkedCards = (e) => {
     counterText.innerHTML = counter;
   }
   if (
-    document.querySelectorAll(".card").length ==
-    document.querySelectorAll(".card.toggleCard").length
+    // document.querySelectorAll(".card").length ==
+    // document.querySelectorAll(".card.toggleCard").length
     //для тестирования
-    // document.querySelectorAll(".card.toggleCard").length === 2
+    document.querySelectorAll(".card.toggleCard").length === 2
   ) {
     console.log("game over");
     document.querySelector(".win").classList.add("active");

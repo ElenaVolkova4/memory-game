@@ -56,6 +56,7 @@
 
 html {
   height: 100%;
+  background-size: cover;
   background: #ffa100;
   background: radial-gradient(circle, #ffa100 30%, #00a383 86%);
   background-attachment: fixed;
@@ -387,10 +388,6 @@ a {
 .win__info .win__button:active {
   -webkit-box-shadow: 0 0 5px 0 #ff9f00, 0 0 5px 1px #ff9f00;
           box-shadow: 0 0 5px 0 #ff9f00, 0 0 5px 1px #ff9f00;
-}
-
-.win__img {
-  width: 200px;
 }
 
 @media screen and (max-width: 450px) {
