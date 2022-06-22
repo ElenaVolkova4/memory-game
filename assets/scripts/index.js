@@ -198,7 +198,3 @@ playAgainBtn.addEventListener("click", () => {
   counterText.innerHTML = 0;
   counter = 0;
 });
-
-//доделать:
-//переворачивание карты неровное
-//проверить на валидаторе
