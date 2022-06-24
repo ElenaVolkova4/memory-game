@@ -277,8 +277,8 @@ a {
   text-transform: uppercase;
   font-weight: 700;
   color: #eae0d6;
-  -webkit-box-shadow: 0 0 40px 40px #ffa100 inset, 0 0 0 0 #ffa100;
-          box-shadow: 0 0 40px 40px #ffa100 inset, 0 0 0 0 #ffa100;
+  -webkit-box-shadow: 0 0 40px 40px #f30020ad inset, 0 0 0 0 #f30021;
+          box-shadow: 0 0 40px 40px #f30020ad inset, 0 0 0 0 #f30021;
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
 }
