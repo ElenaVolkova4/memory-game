@@ -385,6 +385,10 @@ a {
           box-shadow: 0 0 5px 0 #ff9f00, 0 0 5px 1px #ff9f00;
 }
 
+.win__info p {
+  text-align: center;
+}
+
 @media screen and (max-width: 450px) {
   .win__img {
     display: none;

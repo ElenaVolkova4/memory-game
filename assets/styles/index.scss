@@ -292,6 +292,10 @@ a {
   }
 }
 
+.win__info p {
+  text-align: center;
+}
+
 .win__img {
   // width: 200px;
   @media screen and (max-width: $mobile) {
