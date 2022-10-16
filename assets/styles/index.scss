@@ -144,13 +144,10 @@ a {
 
   //удалить
   // cursor: pointer;
-  // cursor: url(../images/pointer.png), auto;
 
   position: relative;
   transform-style: preserve-3d; //для исп-ни нужно у род контейнера указывать perspective
-  // transition: all 2s ease;
   transition: transform 1s;
-  // transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
   border-radius: 10px;
 }
@@ -290,7 +287,6 @@ a {
 }
 
 .win__img {
-  // width: 200px;
   @media screen and (max-width: $mobile) {
     display: none;
   }
