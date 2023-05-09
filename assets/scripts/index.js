@@ -62,21 +62,21 @@ const playAgainBtn = document.querySelector(".win__button");
 
 //карточки
 const getData = () => [
-  { imgSrc: "../assets/images/js.png", name: "javascript" },
+  { imgSrc: "./assets/images/js.png", name: "javascript" },
   {
-    imgSrc: "../assets/images/HTML2.png",
+    imgSrc: "./assets/images/HTML2.png",
     name: "html",
   },
-  { imgSrc: "../assets/images/css2.png", name: "css" },
-  { imgSrc: "../assets/images/react.png", name: "react" },
-  { imgSrc: "../assets/images/figma.png", name: "figma" },
-  { imgSrc: "../assets/images/github.png", name: "github" },
-  { imgSrc: "../assets/images/js.png", name: "javascript" },
-  { imgSrc: "../assets/images/HTML2.png", name: "html" },
-  { imgSrc: "../assets/images/css2.png", name: "css" },
-  { imgSrc: "../assets/images/react.png", name: "react" },
-  { imgSrc: "../assets/images/figma.png", name: "figma" },
-  { imgSrc: "../assets/images/github.png", name: "github" },
+  { imgSrc: "./assets/images/css2.png", name: "css" },
+  { imgSrc: "./assets/images/react.png", name: "react" },
+  { imgSrc: "./assets/images/figma.png", name: "figma" },
+  { imgSrc: "./assets/images/github.png", name: "github" },
+  { imgSrc: "./assets/images/js.png", name: "javascript" },
+  { imgSrc: "./assets/images/HTML2.png", name: "html" },
+  { imgSrc: "./assets/images/css2.png", name: "css" },
+  { imgSrc: "./assets/images/react.png", name: "react" },
+  { imgSrc: "./assets/images/figma.png", name: "figma" },
+  { imgSrc: "./assets/images/github.png", name: "github" },
 ];
 
 // перемешивание карточек
